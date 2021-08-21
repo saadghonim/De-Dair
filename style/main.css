@@ -298,6 +298,10 @@
             color: rgb(255, 255, 255);
         }
         
+        .bt_user:focus {
+            outline: 0;
+        }
+        
         html[dir="rtl"] .user .lang {
             margin-right: 40px;
         }
