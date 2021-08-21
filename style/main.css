@@ -333,6 +333,12 @@
         }
         
         .dropbtn-rl {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .dropbtn-rl {
             color: rgb(99, 37, 112);
         }
         
@@ -1832,9 +1838,16 @@
         }
         
         .input_parant {
-            height: 60px;
             display: flex;
             align-items: center;
+        }
+        
+        html[dir="rtl"] .input_parant {
+            height: 60px;
+        }
+        
+        html[dir="ltr"] .input_parant {
+            height: 87px;
         }
         
         .Newsletter .input_div {
@@ -1920,7 +1933,14 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
+        }
+        
+        html[dir="rtl"] .social_media {
             height: 60px;
+        }
+        
+        html[dir="ltr"] .social_media {
+            height: 87px;
         }
         
         .social_media .anc_social {
@@ -1971,6 +1991,10 @@
             }
             .input_parant {
                 margin-bottom: 10px;
+                height: auto;
+            }
+            .social_media {
+                height: auto;
             }
         }
         /* ****************************************************
