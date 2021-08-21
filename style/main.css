@@ -354,6 +354,12 @@
             display: inline-block;
         }
         
+        .dropdown-rl {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
         .dropdown-content-rl,
         .dropdown-content-lang {
             opacity: 0;
@@ -610,12 +616,6 @@
         }
         
         @media(max-width:767px) {
-            html[dir="rtl"] .dropdown-content-rl {
-                right: -75px;
-            }
-            html[dir="ltr"] .dropdown-content-rl {
-                left: -75px;
-            }
             .bars_ {
                 display: block;
             }
