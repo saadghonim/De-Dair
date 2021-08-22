@@ -114,7 +114,7 @@
         /* ***************************start ..header********************** */
         
         header {
-            padding: 20px 0;
+            padding: 15px 0;
         }
         
         .header {
@@ -165,7 +165,7 @@
         }
         
         .anc_nav {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 500;
             font-family: "Tajawal";
             color: rgb(0, 0, 0);
@@ -293,6 +293,14 @@
             justify-content: center;
         }
         
+        html[dir="rtl"] .bt_user {
+            margin-right: 5px;
+        }
+        
+        html[dir="ltr"] .bt_user {
+            margin-left: 5px;
+        }
+        
         .bt_user:hover {
             background-color: rgb(99, 37, 112);
             color: rgb(255, 255, 255);
@@ -381,7 +389,7 @@
             border-radius: 5px;
             z-index: 99;
             transition: .5s;
-            padding: 20px 25px;
+            padding: 15px 20px;
         }
         
         .dropdown-content-rl::after,
@@ -1095,7 +1103,7 @@
             display: flex;
             justify-content: center;
             margin-bottom: 15px;
-            height: 54px
+            height: 34px
         }
         
         .mout_div .price span {
@@ -1132,6 +1140,18 @@
             font-size: 13px;
             color: rgb(255, 255, 255);
             font-weight: 500;
+            opacity: 0;
+            visibility: hidden;
+            transition: .5s;
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            -ms-transition: .5s;
+            -o-transition: .5s;
+        }
+        
+        .mout_div:hover .add_shopping {
+            opacity: 1;
+            visibility: visible;
         }
         
         .most_viewed .owl-nav {
@@ -1258,11 +1278,6 @@
         .new {
             text-align: center;
             margin-bottom: 60px;
-        }
-        
-        .new .mout_div:hover {
-            border-radius: 24px;
-            box-shadow: unset;
         }
         
         .new .mout_div {
@@ -1813,6 +1828,9 @@
             }
             .brands {
                 padding: 60px 0 80px;
+            }
+            header {
+                padding: 10px 0;
             }
         }
         /* ****************************************************
